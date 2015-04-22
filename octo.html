@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <link href='css/octo.css' rel='stylesheet' type='text/css'>
+        <title>
+            OCTO | NNDesign
+        </title>
+        <meta name='author' content='NNDesign' />
+        <meta charset='utf-8' />
+    </head>
+    <body>
+        <!--This is the section you'll want to copy/paste onto your site-->
+        
+        <div id="thumblist">
+          <p>
+            click an image to make it bigger!
+          </p>
+            
+          <a href="#image1"> 
+            <img src="http://i.imgur.com/wzAO9ss.jpg" class="thumb"/><!--you'll want to change the link in there, it's just a placeholder-->
+          </a>
+            <!--what the user sees before clicking anything-->
+            
+          <div id="image1" class="lightbox"> <!--what the user sees after clicking the first image-->
+              
+            <a href="#_"> <!--no need for a left arrow because there is no previous image to go to-->
+              <img src="http://i.imgur.com/wzAO9ss.jpg" />
+                <!--this is the actual image that 'grows'. You'll want this link to match the one in #image1-->
+            </a>
+              
+            <a href="#_"><!--this href takes out out of full screen. -->
+              <img src="http://i.imgur.com/6JOeXGB.png" class="exit"/><!--exit button-->
+            </a>
+              
+            <a href="#image2"><!--this href leads you to the next image in the slideshow-->
+              <img src="http://i.imgur.com/kkYEJHe.png" class="next"/><!--next button-->
+            </a>
+              
+          </div>
+            
+          <a href="#image2"><!--this href leads you to the previous image-->
+            <img src="http://i.imgur.com/1q5TzXL.jpg" class="thumb" /><!--left arrow button-->
+          </a>
+            
+          <div id="image2" class="lightbox"><!--from here on out, the same comments apply. Notice that the href for the previous selector is set to the id of the lightbox div for the previous image, opposite goes for the next selector. This is what makes the slider work. There are some that use CSS and huge margins, but I prefer to keep my markup and css simple enough to explain. Hope you can use this!-->
+            <a href="#image1">
+              <img src="http://i.imgur.com/Q5fdqTc.png" class="previous"/>
+            </a>
+              
+            <a href="#_">
+              <img src="http://i.imgur.com/1q5TzXL.jpg" />
+            </a>
+              
+            <a href="#_">
+              <img src="http://i.imgur.com/6JOeXGB.png" class="exit"/>
+            </a>
+              
+            <a href="#image3">
+              <img src="http://i.imgur.com/kkYEJHe.png" class="next"/>
+            </a>
+              
+          </div>
+            
+          <a href="#image3">
+            <img src="http://i.imgur.com/oq98hTA.jpg" class="thumb" />
+          </a>
+            
+          <div id="image3" class="lightbox">
+              
+            <a href="#image2">
+              <img src="http://i.imgur.com/Q5fdqTc.png" class="previous"/>
+            </a>
+              
+            <a href="#_">
+              <img src="http://i.imgur.com/oq98hTA.jpg" />
+              <p class="description">
+                You can even add image descriptions.
+              </p>
+            </a>
+              
+            <a href="#_">
+              <img src="http://i.imgur.com/6JOeXGB.png" class="exit"/>
+            </a>
+              
+          </div>
+        </div><!--/thumblist-->
+    </body>
+</html>

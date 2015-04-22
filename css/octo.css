@@ -1,0 +1,62 @@
+body a {
+    text-decoration: none;
+}
+.thumb {
+    display: inline;
+    max-height: 200px;
+}
+#thumblist {
+    text-align: center;
+    border-radius: 8px;
+    padding: 0;
+    background: rgba(127,127,127,.8);
+}
+#thumblist img {
+    border-radius: 8px;
+}
+.description {
+      color: white;
+      text-decoration: none;
+}
+
+/** relevant CSS Below **/
+
+.lightbox {
+    display: none; /**sets the default display to hide the lightbox until it's the :target**/
+    position: fixed; /**the rest of this styling makes the lightbox full screen when selected**/
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.8);
+}
+.lightbox img { /**sets the styling of the image in the lightbox**/
+    max-width: 80%;
+    max-height: 90%;
+    text-align: center;
+    margin-top: 2%;
+}
+.lightbox:target { /**this is where the magic happens. makes the lightbox display when it's the target of a clickable link**/
+    outline: none;
+    display: block;
+}
+.previous { /**styling the left arrow**/
+    position: fixed;
+    left: 4px;
+    top: 40%;
+    width: 40px;
+}
+.exit { /**styling the exit button**/
+    position: fixed;
+    top: 4px;
+    right: 4px;
+    width: 40px;
+}
+.next { /**styling the right arrow**/
+    position: fixed;
+    right: 4px;
+    top: 40%;
+    width: 40px;
+}
